@@ -1,9 +1,8 @@
 //! Public keys
 
-use crate::{prost_ext::MessageExt, proto, AccountId, Error, ErrorReport, Result};
+use crate::{prost_ext::MessageExt, proto, AccountId, Error, ErrorReport, Result, Any};
 use eyre::WrapErr;
 use prost::Message;
-use prost_types::Any;
 use serde::{Deserialize, Serialize};
 use std::str::FromStr;
 use subtle_encoding::base64;
